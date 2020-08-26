@@ -3,6 +3,8 @@ Simple taskbar module for [polybar](https://github.com/polybar/polybar) written 
 
 Module displays all opened GUI applications next to each other.
 
+![Example](https://raw.githubusercontent.com/ThomasTheHuman/polybar-taskbar/master/example.png "Example")
+
 Module provides three different styles for:
 - focused window,
 - unfocused windows on active workspace,
@@ -10,6 +12,19 @@ Module provides three different styles for:
 
 Chosen window can be focused using left mouse click.
 
-#### MODULE IS WORK IN PROGRESS
+### Example module declaration:
+```
+[module/taskbar]
+type = custom/script
+interval = 0.25
+label-foreground = ${colors.foreground}
+label-background = ${colors.background}
+label = %output%
+format = <label>
+exec = python3 /path/to/taskbar.py
+```
+
+#### THIS MODULE IS WORK IN PROGRESS
 
 At current stage it is just a proof of concept.
+For now most of configuration must be done inside script file.
