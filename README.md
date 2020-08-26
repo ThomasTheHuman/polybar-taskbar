@@ -5,7 +5,7 @@ Module displays all opened GUI applications next to each other.
 
 ![Example](https://raw.githubusercontent.com/ThomasTheHuman/polybar-taskbar/master/example.png "Example")
 
-Module provides three different styles for:
+Three different styles are provided for:
 - focused window,
 - unfocused windows on active workspace,
 - windows on unactive workspaces.
